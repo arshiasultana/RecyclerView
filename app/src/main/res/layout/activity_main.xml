@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Name:"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter your name"
+        android:textSize="20dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:id="@+id/course"
+        android:text="Course:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter your course name"
+        android:textSize="20dp"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/select_year"
+        android:layout_width="134dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/course"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@id/button_decrease"
+        android:text="Select year "
+        android:textSize="20dp"
+        android:textColor="#000"/>
+
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/course"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:layout_margin="8dp"
+        android:textSize="50sp"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/button_decrease"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@id/year"
+        android:layout_alignBottom="@id/year"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="-178dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toStartOf="@id/year"
+        android:layout_toLeftOf="@id/course"
+        android:textSize="30dp"
+        android:text="-"
+        android:textColor="#fff"
+        android:background="#000"/>
+
+    <Button
+        android:id="@+id/button_increase"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignTop="@id/year"
+        android:layout_alignBottom="@id/year"
+        android:layout_marginBottom="13dp"
+        android:layout_toEndOf="@id/year"
+        android:layout_toRightOf="@id/course"
+        android:textSize="20dp"
+        android:text="+"
+        android:textColor="#fff"
+        android:background="#000"/>
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/year"
+        android:text="ADD"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="#fff"
+        android:background="#000"/>
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/button_add"
+       android:layout_below="@id/year"
+        android:text="UPDATE"
+        android:textColor="#fff"
+        android:layout_marginEnd="15dp"
+        android:background="#000"
+        android:layout_marginRight="15dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button_add">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>
